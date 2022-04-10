@@ -1,17 +1,17 @@
 import { useState } from 'react'
 import logo from './img/Monarch_Color_splatter.png'
-import './App.css'
+import Footer from './Footer.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div className="w-full bg-slate-100 flex flex-col items-center">
+      <header className="flex flex-col items-center space-y-4">
+        <img src={logo} className="max-w-sm mx-auto" alt="logo" />
         <p>Hello Vite + React!</p>
         <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
+          <button className="p-3 bg-blue-400 rounded text-white" type="button" onClick={() => setCount((count) => count + 1)}>
             count is: {count}
           </button>
         </p>
@@ -20,7 +20,7 @@ function App() {
         </p>
         <p>
           <a
-            className="App-link"
+            className="text-blue"
             href="https://reactjs.org"
             target="_blank"
             rel="noopener noreferrer"
@@ -29,7 +29,7 @@ function App() {
           </a>
           {' | '}
           <a
-            className="App-link"
+            className="text-blue"
             href="https://vitejs.dev/guide/features.html"
             target="_blank"
             rel="noopener noreferrer"
@@ -38,6 +38,9 @@ function App() {
           </a>
         </p>
       </header>
+      <div className="flex-end w-full">
+        <Footer/>
+      </div>
     </div>
   )
 }

@@ -1,3 +1,15 @@
-## npm start
+# Monarch (competetiveedh.net)
 
-This command will run the application at localhost
+## Run Locallly
+Run both of these commands.
+
+### Vite Server
+```sh
+npm run dev
+```
+
+### Tailwind CSS
+```sh
+bash tailwind.sh
+```
+
