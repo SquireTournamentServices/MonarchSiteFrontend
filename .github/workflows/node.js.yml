@@ -28,7 +28,3 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: npm run build --if-present
-
-    - name: Image Optimizer
-      uses: crush-pics/crush-pics-github-action@v1.0
-
