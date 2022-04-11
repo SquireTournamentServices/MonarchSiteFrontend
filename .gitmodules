@@ -1,0 +1,3 @@
+[submodule "src/mana"]
+	path = src/mana
+	url = https://github.com/scryfall/manamoji-discord
