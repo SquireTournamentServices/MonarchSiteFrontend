@@ -1,0 +1,29 @@
+name: "Crush images"
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - '**.jpg'
+      - '**.jpeg'
+      - '**.png'
+      - '**.gif'
+  pull_request:
+    # The branches below must be a subset of the branches above
+    branches: [ main ]
+    paths:
+      - '**.jpg'
+      - '**.jpeg'
+      - '**.png'
+      - '**.gif'
+jobs:
+  crush:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: 'recursive'
+      - name: Crush images
+        uses: crush-pics/crush-pics-github-action@master
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          api-key: ${{ secrets.CRUSH_API_KEY }}
