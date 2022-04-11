@@ -1,4 +1,4 @@
-name: Crush images
+name: "Crush images"
 on:
   push:
     branches: [ main ]
