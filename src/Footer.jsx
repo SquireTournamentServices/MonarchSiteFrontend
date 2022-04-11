@@ -20,7 +20,7 @@ const Footer = ({}) => {
  		  <div className="w-fit flex-1 flex flex-row items-center space-x-4">
         <img src={logo} className="max-h-12 md:max-h-24 mx-auto" alt="logo" />
         <div className="flex flex-col space-y-4">
-          <p>Copyright Monarch 2022, all tournamnet data is collected inline with out privacy policy.</p>
+          <p>Copyright Monarch 2022, all tournamnet data is collected inline with our privacy policy.</p>
           <p>Portions of Monarch&apos;s Site are unofficial Fan Content permitted under the Wizards of the
           Coast Fan Content Policy. The literal and graphical information presented on this site about 
           Magic: The Gathering, including card images, the mana symbols, and Oracle text, is copyright
