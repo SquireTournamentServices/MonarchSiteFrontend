@@ -1,8 +1,15 @@
 name: Crush images
 on:
+  push:
+    branches: [ main ]
+    paths:
+      - '**.jpg'
+      - '**.jpeg'
+      - '**.png'
+      - '**.gif'
   pull_request:
-    branches:
-      - main
+    # The branches below must be a subset of the branches above
+    branches: [ main ]
     paths:
       - '**.jpg'
       - '**.jpeg'
