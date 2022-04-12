@@ -7,7 +7,7 @@ import logo from './img/Monarch_Color_splatter.png'
 function MainLayout() {
   return (
     <div className="w-full min-h-screen bg-slate-100 flex flex-col items-center justify-between space-y-4">
-      <div className="w-full">
+      <div className="w-full sticky top-0">
       	<Navbar/>
       </div>
 
