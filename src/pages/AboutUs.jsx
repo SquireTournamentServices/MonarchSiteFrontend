@@ -9,6 +9,11 @@ import youtube_logo from '../img/Youtube_Logo.png'
 import twitch_logo from '../img/Twitch_Logo.png'
 import discord_logo from '../img/Discord_Logo.png'
 
+import staff_nicholas from '../img/staff/nicholas.jpg'
+import staff_libby from '../img/staff/libby.jpg'
+import staff_tyler from '../img/staff/tyler.jpg'
+import staff_mike from '../img/staff/mike.jpg'
+
 const AboutUs = () => {
 	// I put the links here so that they do not get lost
   const patreon_url = "https://www.patreon.com/monarchevents";
@@ -43,7 +48,7 @@ Running tournaments for charity is a great way for us to give back. All our Crow
       </p>
 
       <TextHeader text="Support Us"/>
-      <div className="flex flex-row flex-wrap space-x-4">
+      <div className="flex flex-row flex-wrap">
       	<ImageLink src={patreon_logo} href={patreon_url} text="Support on Patreon"/>
       	<ImageLink src={github_logo} href={github_url} text="Contribute on Github"/>
       	<ImageLink src={youtube_logo} href={youtube_url} text="Subscribe on Youtube"/>
@@ -51,15 +56,12 @@ Running tournaments for charity is a great way for us to give back. All our Crow
       	<ImageLink src={discord_logo} href={discord_url} text="Join our Discord"/>
       </div>
 
-      <TextHeader text="Our Staff"/>
+      <TextHeader text="Our Staff - Directors"/>
       <div className="w-full flex flex-wrap items-center justify-center">
-        <StaffProfile image="changeme" name="name" title="title" quote="quote"/>
-        <StaffProfile image="changeme" name="name" title="title" quote="quote"/>
-        <StaffProfile image="changeme" name="name" title="title" quote="quote"/>
-        <StaffProfile image="changeme" name="name" title="title" quote="quote"/>
-        <StaffProfile image="changeme" name="name" title="title" quote="quote"/>
-        <StaffProfile image="changeme" name="name" title="title" quote="quote"/>
-        <StaffProfile image="changeme" name="name" title="title" quote="quote"/>
+        <StaffProfile image={staff_nicholas} name='Nicholas "Joking" Hammond' title="Executive Director" quote="Let's talk cEDH philosophy, it'll be fun, right?"/>
+        <StaffProfile image={staff_libby} name='Landon "Libby" Liberator' title="Events Director/Judge Manager" quote="Well, layers are supposed to be intuitive..."/>
+        <StaffProfile image={staff_tyler} name='Tyle "Tylord" Bloom' title="IT Director" quote="Interesting... The bit has becme sentient!"/>
+        <StaffProfile image={staff_mike} name='Mike "a00682005" Hansen' title="Streaming Director" quote="Ha!"/>
       </div>
     </div>
 	);
