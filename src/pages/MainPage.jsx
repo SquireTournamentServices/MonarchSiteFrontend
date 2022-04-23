@@ -1,6 +1,6 @@
 import React from 'react'
 import ArticleCard from '../components/ArticleCard.jsx'
-import logo from '../img/Monarch_Color_splatter.png'
+import logo from '../img/staff/eric.jpg'
 
 const MainPage = () => {
 	return (
