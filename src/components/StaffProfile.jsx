@@ -7,7 +7,13 @@ const StaffProfile = ({image, name, title, quote}) => {
       <div className="px-4 space-y-4 flex flex-col">
         <p className="text-2xl">{name}</p>
         <p className="text-xl">{title}</p>
-        <p className="text-slate-800 italic">"{quote}"</p>
+  {(() => {
+    if (quote + "" != "") {
+    	return <p className="text-slate-800 italic">"{quote}"</p>
+		} else {
+      return <p className="text-slate-800 italic">Quote coming soon!</p>
+    }
+  })()}
    		</div>
       <div/>
     </div>

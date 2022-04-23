@@ -14,6 +14,12 @@ import staff_libby from '../img/staff/libby.jpg'
 import staff_tyler from '../img/staff/tyler.jpg'
 import staff_mike from '../img/staff/mike.jpg'
 
+import staff_martin from '../img/staff/martin.jpg'
+import staff_eric from '../img/staff/eric.jpg'
+import staff_darius from '../img/staff/darius.jpg'
+import staff_bree from '../img/staff/bree.png'
+import staff_ryan from '../img/staff/ryan.png'
+
 const AboutUs = () => {
 	// I put the links here so that they do not get lost
   const patreon_url = "https://www.patreon.com/monarchevents";
@@ -62,6 +68,15 @@ Running tournaments for charity is a great way for us to give back. All our Crow
         <StaffProfile image={staff_libby} name='Landon "Libby" Liberator' title="Events Director/Judge Manager" quote="Well, layers are supposed to be intuitive..."/>
         <StaffProfile image={staff_tyler} name='Tyle "Tylord" Bloom' title="IT Director" quote="Interesting... The bit has becme sentient!"/>
         <StaffProfile image={staff_mike} name='Mike "a00682005" Hansen' title="Streaming Director" quote="Ha!"/>
+      </div>
+      
+      <TextHeader text="Our Staff - Tournament Organisers"/>
+      <div className="w-full flex flex-wrap items-center justify-center">
+      	<StaffProfile image={staff_martin} name='Martin "Snuske" Hansen' title="Tournament Organiser" quote="You should try Kodama!"/>
+      	<StaffProfile image={staff_eric} name='Eric "Efond" Palmer' title="Tournament Organiser" quote="First, read the card. Next, look up the oracle text..."/>
+      	<StaffProfile image={staff_darius} name='Darius "Flash"' title="Tournament Organiser" quote="The cards so broken, man!"/>
+      	<StaffProfile image={staff_bree} name='Bree "BreeBree" Yard' title="Tournament Organiser" quote=""/>
+      	<StaffProfile image={staff_ryan} name='Ryan "Koibito"' title="Tournament Organiser" quote=""/>
       </div>
     </div>
 	);
