@@ -3,7 +3,7 @@ import React from 'react'
 const StaffProfile = ({image, name, title, quote}) => {
 	return (
 		<div className="w-full md:w-1/2 p-4">
-  		<div className="flex flex-col space-y-4 h-full items-center rounded-lg bg-white">
+  		<div className="flex flex-col space-y-4 h-full items-center rounded-lg bg-white shadow-lg">
         <img src={image} className="w-full object-cover rounded-lg hover:scale-105 transition-all" alt="staff image"/>
         <div className="px-4 space-y-4 flex flex-col">
           <p className="text-2xl">{name}</p>
