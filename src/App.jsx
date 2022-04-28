@@ -13,8 +13,8 @@ function App() {
       <Routes>
       	<Route exact path='/' element={<MainLayout/>}>
      	    <Route exact path='/' element={<MainPage/>}/>
-          <Route exact path='./about-us' element={<AboutUs/>}/>
-          <Route exact path="./privacy" element={<Privacy/>}/>
+          <Route exact path='/about-us' element={<AboutUs/>}/>
+          <Route exact path='/privacy' element={<Privacy/>}/>
           <Route path="*" element={<PageNotFound/>}/>
         </Route>
         <Route exact path="/api/" element={<ApiLayout/>}>
