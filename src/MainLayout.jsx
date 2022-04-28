@@ -6,7 +6,7 @@ import Navbar from './Navbar.jsx'
 function MainLayout() {
   return (
     <div className="w-full min-h-screen bg-slate-200 flex flex-col items-center justify-between space-y-4">
-      <div className="w-full sticky top-0">
+      <div className="w-full sticky top-0 z-10">
       	<Navbar/>
       </div>
 

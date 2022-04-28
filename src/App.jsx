@@ -6,6 +6,7 @@ import AboutUs from './pages/AboutUs.jsx'
 import Privacy from './pages/Privacy.jsx'
 import ApiLayout from './layouts/ApiLayout.jsx'
 import PageNotFound from './pages/PageNotFound.jsx'
+import ApiMainPage from './pages/ApiMainPage.jsx'
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
           <Route path="*" element={<PageNotFound/>}/>
         </Route>
         <Route exact path="/api/" element={<ApiLayout/>}>
-        	<Route exact path="./" element={<Privacy/>}/>
+        	<Route exact path="/api/" element={<ApiMainPage/>}/>
           <Route path="*" element={<PageNotFound/>}/>
        	</Route>
       </Routes>
