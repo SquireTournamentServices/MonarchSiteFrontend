@@ -20,6 +20,18 @@ import staff_darius from '../img/staff/darius.jpg'
 import staff_bree from '../img/staff/bree.png'
 import staff_ryan from '../img/staff/ryan.png'
 
+import staff_marcus from '../img/staff/marcus.png'
+import staff_david from '../img/staff/david.png'
+import staff_andrew from '../img/staff/andrew.jpg'
+
+import staff_sage from '../img/staff/sage.jpg'
+import staff_jordan from '../img/staff/jordan.jpg'
+import staff_pedro from '../img/staff/pedro.png'
+import staff_rose from '../img/staff/rose.png'
+import staff_curt from '../img/staff/curt.png'
+
+import staff_os_danny from '../img/staff/open_source/danny.png'
+
 const AboutUs = () => {
 	// I put the links here so that they do not get lost
   const patreon_url = "https://www.patreon.com/monarchevents";
@@ -77,6 +89,27 @@ Running tournaments for charity is a great way for us to give back. All our Crow
       	<StaffProfile image={staff_darius} name='Darius "Flash"' title="Tournament Organiser" quote="The cards so broken, man!"/>
       	<StaffProfile image={staff_bree} name='Bree "BreeBree" Yard' title="Tournament Organiser" quote=""/>
       	<StaffProfile image={staff_ryan} name='Ryan "Koibito"' title="Tournament Organiser" quote=""/>
+      </div>
+
+      <TextHeader text="Our Staff - Content Creation"/>
+      <div className="w-full flex flex-wrap items-center justify-center">
+      	<StaffProfile image={staff_marcus} name='Marcus "Argus Flightfin" Birch' title="Head of Content"/>
+        <StaffProfile image={staff_david} name='David "Cptncomplicated" Henderson' title="Strean abd Website Technician" quote="Be the best versino of you that you can be"/>
+        <StaffProfile image={staff_andrew} name='Andrew "gilkissin" Taft' title="Video Specialist" quote="Thery're a bugger threat than me. Destroy their stuff, not mine. I'm harmless."/>
+      </div>
+
+      <TextHeader text="Our Staff - Marketing"/>
+      <div className="w-full flex flex-wrap items-center justify-center">
+          <StaffProfile image={staff_sage} name='Sage "The Fabled Sage" Stafford' title="Marketing Lead" quote="Storm count is 8, I have 2 blue and 5 red mana in my pool."/>
+          <StaffProfile image={staff_jordan} name='Jordan "Jo" Riddle' title="Graphic Designer" quote="Hiii"/>
+          <StaffProfile image={staff_pedro} name='Pedro "SuchPedro"' title="Graphic Designer"/>
+          <StaffProfile image={staff_rose} name='Rose "Flowwer" Ellis' title="Social Media Manager" quote="Mono-Green is TOTALLY  viable you guys!"/>
+          <StaffProfile image={staff_curt} name='Curt "Octave"' title="Marketing and Events" quote="That's not busted, it's too slow."/>
+      </div>
+
+      <TextHeader text="Our Staff - Programmers and, Data Scientists"/>
+      <div className="w-full flex flex-wrap items-center justify-center">
+        <StaffProfile image={staff_os_danny} name="Danny Piper" title="Programmer" quote="Trice bot dev, website dev and admin, database admin and, Squire Desktop dev."/>
       </div>
     </div>
 	);
